@@ -1,5 +1,8 @@
 import styled from 'styled-components';
 import facebook from './assets/facebook.png';
+import whatsapp from './assets/whatsapp.png';
+import instagram from './assets/instagram.png';
+import google from './assets/google.png';
 
 const RodapeEstilizado = styled.footer`
 	height: 100%;
@@ -27,6 +30,21 @@ export function Rodape() {
 				<ItemEstilizado>
 					<a href="#">
 						<img src={facebook} alt="logo do facebook" />
+					</a>
+				</ItemEstilizado>
+				<ItemEstilizado>
+					<a href="#">
+						<img src={whatsapp} alt="logo do whatasapp" />
+					</a>
+				</ItemEstilizado>
+				<ItemEstilizado>
+					<a href="#">
+						<img src={google} alt="logo do google" />
+					</a>
+				</ItemEstilizado>
+				<ItemEstilizado>
+					<a href="#">
+						<img src={instagram} alt="logo do instagram" />
 					</a>
 				</ItemEstilizado>
 			</ListaEstilizada>

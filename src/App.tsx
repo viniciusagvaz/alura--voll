@@ -1,6 +1,12 @@
 import './App.css';
-import { Cabecalho } from './components/cabecalho';
+import { Cabecalho } from './components/Cabecalho';
+import { Container } from './components/Container';
 
 export function App() {
-	return <Cabecalho/>;
+	return (
+		<>
+			<Cabecalho />
+			<Container></Container>
+		</>
+	);
 }

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 
 export default function useFetch<T>({ url }: { url: string }) {
+
 	const [dados, setDados] = useState<T | null>(null);
 	const [erro, setErro] = useState('');
 
@@ -9,7 +10,8 @@ export default function useFetch<T>({ url }: { url: string }) {
 			.then((resposta) => resposta.json())
 			.then((dados) => setDados(dados))
 			.catch((erro) => setErro(erro));
-	}, [url])
+	}, [url]);
 
 	return { dados, erro };
+
 }
